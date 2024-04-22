@@ -1,23 +1,20 @@
 import { data } from "../../data"
+import Card from "./Card";
+import "./Main.css"
 
 
 const Main = () => {
     return (
-        <main>
+        <main className="card-container">
             {
-                data.map((item, index) => {
-                    return (
-                        <div key={index}>
-                            <p>Sehir Bilgisi:</p>
-                            <h1>{item.title}</h1>
-                        </div>
-                    )
+                data.map((item) => {
+                    return <Card key={item.id} {...item}  />
                 })
             }
         </main>
-    )
-
-   
+    )   
 }
 
 export default Main;
+
+//props
