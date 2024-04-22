@@ -8,7 +8,7 @@ const Main = () => {
                 data.map((item, index) => {
                     return (
                         <div key={index}>
-                            <p>Sehir:</p>
+                            <p>Sehir Bilgisi:</p>
                             <h1>{item.title}</h1>
                         </div>
                     )
